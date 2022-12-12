@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./dist/script.js" defer></script>
+    <title>ToDo List</title>
+    <style>
+        body {
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        form {
+            margin-top: 50px;
+            width: 50%;
+        }
+        #new-task-title {
+            width: 50%;
+            padding: 15px 0 15px 30px;
+            border: none;
+            border-radius: 20px 0 0 20px;
+        }
+        #new-task-title:focus {
+            outline: none;
+        }
+        button {
+            padding: 15px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border-radius: 0 20px 20px 0;
+        }
+        #list {
+            list-style: none;
+            display: block;
+            margin-left: -50%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form id="new-task-form">
+        <input type="text" id="new-task-title" placeholder="Write Your Task Here">
+        <button type="submit">Add</button>
+    </form>
+    <ul id="list">
+    </ul>
+</body>
+</html>
